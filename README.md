@@ -47,7 +47,7 @@ Contributions to this project are welcome! If you have ideas for improvements or
 
 This project was inspired by the need for a simple UNIX command interpreter and the desire to understand the inner workings of shells and operating systems. Special thanks to the open-source community for their contributions and support.
 
-##For Knowledge’s Sake😆📚
+## For Knowledge’s Sake😆📚
 
 1. **Original UNIX Operating System:**
    The original UNIX operating system was designed and implemented by a team of developers at Bell Labs, primarily by Ken Thompson, Dennis Ritchie, Brian Kernighan, Douglas McIlroy, and others. They developed UNIX in the late 1960s and early 1970s.

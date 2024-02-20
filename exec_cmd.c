@@ -6,7 +6,7 @@
 * Return: void
 */
 
-void execCmd(const *my_cmd)
+void execCmd(const char *my_cmd)
 {
 	pid_t secondary_pid = fork();
 
@@ -17,7 +17,7 @@ void execCmd(const *my_cmd)
 	}
 	else if (secondary_pid == 0)
 	{
-		execve(my_cmd, my_cmd, (char *)NULL);
+		execve(my_cmd, const char *my_cmd, (char *)NULL);
 		perror("execve");
 		exit(EXIT_FAILURE);
 	}

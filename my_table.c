@@ -9,6 +9,8 @@ int main(void)
 {
 	int i;
 	int j;
+	getpid();
+
 
 	for (i = 0; i < 10; i++)
 	{

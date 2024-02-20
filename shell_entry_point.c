@@ -1,5 +1,10 @@
 #include "shell.h"
 
+/**
+* main - Entry Point
+* Return: void
+*/
+
 int main(void)
 {
 	char my_cmd[128];

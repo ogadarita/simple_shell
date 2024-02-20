@@ -1,7 +1,9 @@
 #include "shell.h"
 
 /**
-* get_user_input - 
+* get_user_input - Gets user input from stdin
+* @my_cmd: Buffer to store user input
+* @size: Size of the buffer
 */
 
 void get_user_input(char *my_cmd, size_t size)

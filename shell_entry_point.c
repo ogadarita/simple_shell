@@ -12,7 +12,7 @@ int main(void)
 	while (1)
 	{
 		disPrompt();
-		readCmd(my_cmd, sizeof(my_cmd));
+		get_user_input(my_cmd, sizeof(my_cmd));
 		execCmd(my_cmd);
 	}
 	return (0);

@@ -9,6 +9,7 @@
 void execCmd(const char *my_cmd)
 {
 	pid_t secondary_pid = fork();
+	char *argv[] = {(char *)my_cmd, NULL};
 
 	if (secondary_pid == -1)
 	{
@@ -17,9 +18,11 @@ void execCmd(const char *my_cmd)
 	}
 	else if (secondary_pid == 0)
 	{
-		execve(my_cmd, const char *my_cmd, (char *)NULL);
+		if (execve(my_cmd, argv, NULL) == -1)
+		{
 		perror("execve");
 		exit(EXIT_FAILURE);
+		}
 	}
 	else
 	{

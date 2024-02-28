@@ -1,8 +1,15 @@
 #include <stdlib.h>
 #include <string.h>
+
+/**
+* parse_input - Parses the input string into tokens
+* @input: The input string to be parsed
+* Return: An array of tokens
+*/
+
 char **parse_input(char *input)
 {
-	char **tokens = malloc(sizeof(char *) *64); /** maximum number of toxens*/ 
+	char **tokens = malloc(sizeof(char *) * 64); /** maximum number of toxens*/
 	char *token;
 	int i = 0;
 
@@ -14,5 +21,5 @@ char **parse_input(char *input)
 		token = strtok(NULL, "\n");
 	}
 	tokens[i] = NULL; /*array is terminated by NULL*/
-	return tokens;
+	return (tokens);
 }
